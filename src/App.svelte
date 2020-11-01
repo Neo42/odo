@@ -14,6 +14,7 @@
     margin: 22px 0;
     text-align: center;
     color: black;
+    font-family: 'Arvo', serif;
   }
   .todo-list {
     width: 420px;
@@ -22,7 +23,7 @@
 </style>
 
 <div id="app">
-  <h1>Sdo</h1>
+  <h1>TB;DD</h1>
   <div class="todo-list">
     <Todo />
     <CreateInput />
