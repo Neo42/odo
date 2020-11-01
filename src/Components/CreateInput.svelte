@@ -4,11 +4,10 @@
   let todos_value
   const unsubscribe_id = id.subscribe((value) => (id_value = value))
   const unsubscribe_todos = todos.subscribe((value) => (todos_value = value))
-  $: placeholder = todos_value.length === 0 ? '在这里添加待办' : ''
+  $: placeholder = todos_value.length === 0 ? 'Add a todo here...' : ''
 
   function addTodo(e) {
     if (e.keyCode === 13) {
-      console.log('Fired')
       id.update((n) => n + 1)
       let { value } = e.target
       let newTodo = {
@@ -18,7 +17,6 @@
       }
       todos.update((arr) => [...arr, newTodo])
       e.target.value = ''
-      console.log(todos_value)
     }
   }
 </script>
@@ -29,7 +27,7 @@
     height: 50px;
     width: 320px;
     margin: auto;
-    padding: 0 10px;
+    padding: 0 30px;
     font-size: 18px;
     line-height: 18px;
     color: white;

@@ -28,7 +28,7 @@
     font-size: 18px;
     line-height: 18px;
     width: 100%;
-    padding: 0 10px;
+    padding: 0 30px;
     color: white;
     background-color: black;
     border: none;
@@ -50,7 +50,9 @@
       class:done
       bind:value
       on:keydown={(e) => {
-        if (e.keyCode === 13 && value !== '') done = !done
+        if (e.keyCode === 13 && value !== '') {
+          done = !done
+        }
         removeTodo(e, id, i + 1)
       }} />
   </div>

@@ -20,6 +20,17 @@
     width: 420px;
     margin: auto;
   }
+  footer {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    font-size: small;
+    line-height: 19px;
+  }
+  footer img {
+    width: 11px;
+    height: 11px;
+  }
 </style>
 
 <div id="app">
@@ -29,3 +40,12 @@
     <CreateInput />
   </div>
 </div>
+<footer>
+  🔧 w/
+  <img src="Assets/svelte.png" alt="sdf" />
+  & ⚡️ by
+  <a href="https://github.com/neo42">@Neo42</a>
+  |
+  <a href="https://github.com/neo42/tbdd">Repo</a>
+
+</footer>
