@@ -6,11 +6,11 @@ TB;DD is a minimalist todo list app built with [Svelte](https://svelte.dev). Mor
 
 ## How to use it?
 - `enter` -- Create a new todo
-- `tab` / `shift` + `tab`-- Navigate between todos
+- `tab` / `shift` + `tab` -- Navigate between todos
 - `delete` on mac / `backspace` on win -- Delete todo (content)
 
 ## Showcase
-![demo](public/Assets/demo.gif)
+![demo](public/assets/demo.gif)
 
 ## Known Bugs
 - Deleting text doesn't persist after refreshing. 🔨

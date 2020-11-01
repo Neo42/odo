@@ -42,7 +42,7 @@
 </div>
 <footer>
   🔧 w/
-  <img src="Assets/svelte.png" alt="sdf" />
+  <img src="assets/svelte.png" alt="sdf" />
   & ⚡️ by
   <a href="https://github.com/neo42">@Neo42</a>
   |
