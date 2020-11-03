@@ -1,4 +1,6 @@
 <script>
+  import { afterUpdate } from 'svelte'
+
   import { id, todos, inputValue } from '../stores'
   let id_value, todos_value, inputValue_value
   const unsubscribe_id = id.subscribe((value) => (id_value = value))
@@ -8,18 +10,25 @@
   )
   $: placeholder = todos_value.length === 0 ? 'Add a todo here...' : ''
 
-  function triggerInput(e) {
-    inputValue.update((val) => e.target.value)
+  function addTodo(e) {
+    inputValue.update((val) => (val = e.target.value))
+    if (e.keyCode === 8 && e.target.value !== '') {
+      placeholder = ''
+    }
     if (e.keyCode === 13) {
-      id.update((n) => n + 1)
-      let { value } = e.target
-      let newTodo = {
-        done: false,
-        id: id_value,
-        value,
+      if (e.target.value !== '') {
+        id.update((n) => n + 1)
+        let { value } = e.target
+        let newTodo = {
+          done: false,
+          id: id_value,
+          value,
+        }
+        todos.update((arr) => [...arr, newTodo])
+        e.target.value = ''
+      } else {
+        placeholder = 'Please type something...'
       }
-      todos.update((arr) => [...arr, newTodo])
-      e.target.value = ''
     }
   }
 </script>
@@ -38,6 +47,6 @@
   <input
     type="text"
     bind:value={inputValue_value}
-    on:keydown={triggerInput}
+    on:keydown={addTodo}
     {placeholder} />
 </section>
