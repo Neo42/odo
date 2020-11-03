@@ -1,6 +1,4 @@
 <script>
-  import { afterUpdate } from 'svelte'
-
   import { id, todos, inputValue } from '../stores'
   let id_value, todos_value, inputValue_value
   const unsubscribe_id = id.subscribe((value) => (id_value = value))
