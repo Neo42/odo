@@ -1,19 +1,14 @@
-## What is TB;DD?
+## What is odo?
 
-> TB;DD stands for "Too busy; Didn't do".
-
-TB;DD is a minimalist todo list app built with [Svelte](https://svelte.dev). More features to come.
+odo is a minimalist todo list app built with [Svelte](https://svelte.dev). More features to come.
 
 ## How to use it?
 - `enter` -- Create a new todo
 - `tab` / `shift` + `tab` -- Navigate between todos
 - `delete` on mac / `backspace` on win -- Delete todo (content)
 
-## Showcase
-![demo](public/assets/demo.gif)
-
 ## Known Bugs
-- Deleting text doesn't persist after refreshing. 🔨
+🎉 All fixed!
 
 ## Upcoming Features
 - User login
