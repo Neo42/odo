@@ -6,7 +6,7 @@
   const unsubscribe_todos = todos.subscribe((value) => (todos_value = value))
 
   afterUpdate(() => {
-    todos.update((arr) => (arr = todos_value))
+    todos.update((arr) => todos_value)
   })
 
   function updateTodo(e, id, index) {

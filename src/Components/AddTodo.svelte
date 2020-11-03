@@ -9,7 +9,7 @@
   $: placeholder = todos_value.length === 0 ? 'Add a todo here...' : ''
 
   function addTodo(e) {
-    inputValue.update((val) => (val = e.target.value))
+    inputValue.update((val) => e.target.value)
     if (e.keyCode === 8 && e.target.value !== '') {
       placeholder = ''
     }
