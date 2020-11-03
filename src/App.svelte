@@ -1,5 +1,5 @@
 <script>
-  import CreateInput from './Components/CreateInput.svelte'
+  import AddTodo from './Components/AddTodo.svelte'
   import Todo from './Components/Todo.svelte'
 </script>
 
@@ -16,10 +16,34 @@
     color: black;
     font-family: 'Arvo', serif;
   }
-  .todo-list {
+  .list {
     width: 420px;
     margin: auto;
   }
+
+  :global(input) {
+    margin: 0;
+    line-height: 18px;
+    width: 100%;
+    padding: 0 30px;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    transition: ease 0.3s;
+    box-sizing: border-box;
+    height: 50px;
+    width: 320px;
+    margin: auto;
+    padding: 0 30px;
+    font-size: 18px;
+  }
+
+  :global(*::selection) {
+    background-color: cyan;
+  }
+
   footer {
     position: fixed;
     bottom: 20px;
@@ -34,10 +58,10 @@
 </style>
 
 <div id="app">
-  <h1>TB;DD</h1>
-  <div class="todo-list">
+  <h1>odo</h1>
+  <div class="list">
     <Todo />
-    <CreateInput />
+    <AddTodo />
   </div>
 </div>
 <footer>

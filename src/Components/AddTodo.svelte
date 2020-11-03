@@ -1,12 +1,15 @@
 <script>
-  import { id, todos } from '../stores'
-  let id_value
-  let todos_value
+  import { id, todos, inputValue } from '../stores'
+  let id_value, todos_value, inputValue_value
   const unsubscribe_id = id.subscribe((value) => (id_value = value))
   const unsubscribe_todos = todos.subscribe((value) => (todos_value = value))
+  const unsubscribe_inputValue = inputValue.subscribe(
+    (value) => (inputValue_value = value),
+  )
   $: placeholder = todos_value.length === 0 ? 'Add a todo here...' : ''
 
-  function addTodo(e) {
+  function triggerInput(e) {
+    inputValue.update((val) => e.target.value)
     if (e.keyCode === 13) {
       id.update((n) => n + 1)
       let { value } = e.target
@@ -22,22 +25,6 @@
 </script>
 
 <style>
-  input {
-    box-sizing: border-box;
-    height: 50px;
-    width: 320px;
-    margin: auto;
-    padding: 0 30px;
-    font-size: 18px;
-    line-height: 18px;
-    color: white;
-    background-color: black;
-    border: none;
-    border-radius: 8px;
-    outline: none;
-    transition: ease 0.3s;
-  }
-
   section {
     display: block;
     width: 320px;
@@ -48,5 +35,9 @@
 </style>
 
 <section>
-  <input type="text" on:keydown={addTodo} {placeholder} />
+  <input
+    type="text"
+    bind:value={inputValue_value}
+    on:keydown={triggerInput}
+    {placeholder} />
 </section>
