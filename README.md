@@ -13,14 +13,10 @@ odo is a minimalist todo list app built with [Svelte](https://svelte.dev).
 ## How to use it?
 
 - `Enter` -- Create a new todo
-- `Tab` / `Shift + Tab` -- Navigate between todos
-- `Delete` on Mac / `Backspace` on Windows -- Delete todo (content)
+- `Tab` / `Shift + Tab` -- Navigation
+- `Delete` on Mac / `Backspace` on Win -- Delete todo
 
-## Known Bugs
-
-🎉 All fixed!
-
-## Todo
+## Upcoming Features
 
 - [ ] Dark mode
 - [ ] Change layout
@@ -31,3 +27,7 @@ odo is a minimalist todo list app built with [Svelte](https://svelte.dev).
 - [ ] Note tags
 - [ ] Log view / Calendar view
 - [ ] User login
+
+## Known Bugs
+
+🎉 All fixed!
