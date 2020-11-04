@@ -65,11 +65,7 @@
   </div>
 </div>
 <footer>
-  🔧 w/
-  <img src="assets/svelte.png" alt="sdf" />
-  & ⚡️ by
-  <a href="https://github.com/neo42">@Neo42</a>
+  <a href="https://github.com/neo42/odo">Repo</a>
   |
-  <a href="https://github.com/neo42/tbdd">Repo</a>
-
+  <a href="https://github.com/neo42">@Neo42</a>
 </footer>
