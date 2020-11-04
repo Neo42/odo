@@ -25,7 +25,7 @@
         todos.update((arr) => [...arr, newTodo])
         e.target.value = ''
       } else {
-        placeholder = 'Please type something...'
+        placeholder = 'Please type in something...'
       }
     }
   }
