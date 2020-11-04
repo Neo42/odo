@@ -1,5 +1,5 @@
 <script>
-  import { afterUpdate } from 'svelte'
+  import { afterUpdate, tick } from 'svelte'
   import { todos } from '../stores'
   let todos_value
   let focusedId
@@ -29,10 +29,14 @@
     })
   }
 
-  function removeTodo(id, index) {
+  async function removeTodo(id, index) {
     todos.update((arr) => arr.filter((t) => t.id !== id))
     if (todos_value.length !== 0 && index === todos_value.length + 1) {
       document.querySelectorAll(`.todo input`)[todos_value.length - 1].focus()
+    }
+    await tick()
+    if (todos_value.length === 0) {
+      document.querySelectorAll('input')[0].focus()
     }
   }
 </script>
