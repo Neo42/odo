@@ -1,3 +1,11 @@
+<p>
+  <a href="https://odo.surge.sh">
+    <div align="center">
+      <img alt="odo - Get more out of your day" src="./public/logo.png">
+    </div>
+  </a>
+</p>
+
 ## What is odo?
 
 odo is a minimalist todo list app built with [Svelte](https://svelte.dev).
@@ -23,4 +31,3 @@ odo is a minimalist todo list app built with [Svelte](https://svelte.dev).
 - [ ] Note tags
 - [ ] Log view / Calendar view
 - [ ] User login
-
