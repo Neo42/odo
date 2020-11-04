@@ -1,18 +1,26 @@
 ## What is odo?
 
-odo is a minimalist todo list app built with [Svelte](https://svelte.dev). 
+odo is a minimalist todo list app built with [Svelte](https://svelte.dev).
 
 ## How to use it?
-- `enter` -- Create a new todo
-- `tab` / `shift + tab` -- Navigate between todos
-- `delete` on mac / `backspace` on win -- Delete todo (content)
+
+- `Enter` -- Create a new todo
+- `Tab` / `Shift + Tab` -- Navigate between todos
+- `Delete` on Mac / `Backspace` on Windows -- Delete todo (content)
 
 ## Known Bugs
+
 🎉 All fixed!
 
 ## Todo
+
 - [ ] Dark mode
-- [ ] User login
+- [ ] Change layout
 - [ ] Repeated todo
 - [ ] Date & time setting
 - [ ] Background & theme customization
+- [ ] Note taking
+- [ ] Note tags
+- [ ] Log view / Calendar view
+- [ ] User login
+

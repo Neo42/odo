@@ -1,6 +1,6 @@
 <script>
-  import AddTodo from './Components/AddTodo.svelte'
-  import Todo from './Components/Todo.svelte'
+  import AddTodo from './Components/AddTodo.svelte';
+  import Todo from './Components/Todo.svelte';
 </script>
 
 <style>
@@ -50,10 +50,6 @@
     right: 30px;
     font-size: small;
     line-height: 19px;
-  }
-  footer img {
-    width: 11px;
-    height: 11px;
   }
 </style>
 
